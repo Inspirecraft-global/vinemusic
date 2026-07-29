@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroString from '../../assets/Images/artis.png';
+import HeroString from '../../assets/Images/sammy.jpeg';
 import Ane from '../../assets/Images/Anemo.png';
 import Kairo from '../../assets/Images/Kairo.png';
 import Zara from '../../assets/Images/zara.png';
@@ -13,7 +13,7 @@ export default function ArtirstVision() {
           <img
             src={HeroString}
             alt="Hero Background"
-            className="w-full h-full "
+            className="w-full h-[300px]  object-cover"
           />
           <h3 className="absolute md:text-4xl object-cover bottom-0 bg-[#0000004D] w-full font-bold flex justify-center items-center p-3">
             Lafred John{' '}

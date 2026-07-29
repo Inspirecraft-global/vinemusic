@@ -1,6 +1,6 @@
 import React from 'react';
 import vector from '../../assets/Images/vtb.png';
-import CEO from '../../assets/Images/ceo.jpg';
+import CEO from '../../assets/Images/sammy.jpeg';
 
 export default function AboutCEO() {
   return (
@@ -9,14 +9,14 @@ export default function AboutCEO() {
         <img
           src={CEO}
           alt="vector"
-          className=" h-[500px] rounded-md  object-cover"
+          className=" h-[500px] max-w-[420px] rounded-md  object-contain"
         />
 
         <div className=" text-white px-2 py-10 md:p-10">
           <h3 className=" text-3xl md:text-4xl font-extrabold text-white ">
             About Dr. Samuel Oyefeso{' '}
           </h3>
-          <p className="text-lg md:text-lg mt-3 ">
+          <p className="text-lg md:text-lg mt-3 text-justify ">
             Dr. Samuel Oyefeso is a Music Medic, a practicing physician who
             harnesses the healing power of music to transform lives.
             <br />

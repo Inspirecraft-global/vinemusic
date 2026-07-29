@@ -1,8 +1,8 @@
-import React from 'react';
-import Cover3 from '../../assets/Images/audi.jpg';
+import React, { useState } from 'react';
+import Cover3 from '../../assets/Images/beau.jpeg';
 import Cover1 from '../../assets/Images/volin.jpg';
-import Cover2 from '../../assets/Images/Guitar.jpeg';
-import Cover4 from '../../assets/Images/net.jpg';
+import Cover2 from '../../assets/Images/madt.jpeg';
+import Cover4 from '../../assets/Images/praise.jpeg';
 import Cover5 from '../../assets/Images/vint.jpg';
 
 const releases = [
@@ -12,6 +12,7 @@ const releases = [
     title: 'Beautiful Day',
     cover: Cover3,
     audio: '/audio/Sammy.mp3',
+    videoId: '0oJO_MIE2q8',
   },
   {
     id: 'love-and-light-2',
@@ -19,12 +20,13 @@ const releases = [
     title: 'Madt-DEMO.mp3',
     cover: Cover2,
     audio: '/audio/Madt.mp3',
+    videoId: 'YpGE-yxvoI8',
   },
   {
     id: 'love-and-light-3',
     artist: 'Sammy Greyson',
     title: 'Madt-Live.mp3',
-    cover: Cover1,
+    cover: Cover2,
     audio: '/audio/Madt-LIVE.mp3',
   },
   {
@@ -33,17 +35,73 @@ const releases = [
     title: 'Unsual Praise_Sammy Droos',
     cover: Cover4,
     audio: '/audio/Praise_Sammy.mp3',
+    videoId: '50MVMz04UBU',
+
+
   },
   {
     id: 'love-and-light-5',
     artist: 'Sammy Greyson',
     title: 'Unsual Praise_Sammy Droos',
-    cover: Cover5,
+    cover: Cover4,
     audio: '/audio/AUD-20250619-WA0007.mp3',
   },
 ];
 
 export default function ReleaseDetails() {
+  const [playbackModes, setPlaybackModes] = useState({});
+
+  const setPlaybackMode = (releaseId, mode) => {
+    setPlaybackModes((current) => ({ ...current, [releaseId]: mode }));
+  };
+
+  const releaseInfo = (release) => {
+    const mode = playbackModes[release.id] || 'audio';
+    return (
+      <div className="flex flex-col justify-center px-2">
+        <h3 className="text-white text-xl md:text-2xl font-bold">
+          {release.artist}
+        </h3>
+        <p className="text-white/80 mt-2">{release.title}</p>
+
+        <div className="mt-4 inline-flex w-fit rounded-full border border-white/20 bg-black/20 p-1" aria-label={`Choose how to play ${release.title}`}>
+          <button
+            type="button"
+            onClick={() => setPlaybackMode(release.id, 'audio')}
+            aria-pressed={mode === 'audio'}
+            className={`rounded-full px-4 py-2 text-sm font-bold transition ${mode === 'audio' ? 'bg-white text-[#4B0082]' : 'text-white/80 hover:bg-white/10'}`}
+          >
+            Audio
+          </button>
+          {release.videoId && (
+            <button
+              type="button"
+              onClick={() => setPlaybackMode(release.id, 'video')}
+              aria-pressed={mode === 'video'}
+              className={`rounded-full px-4 py-2 text-sm font-bold transition ${mode === 'video' ? 'bg-white text-[#4B0082]' : 'text-white/80 hover:bg-white/10'}`}
+            >
+              Video
+            </button>
+          )}
+        </div>
+
+        {mode === 'video' && release.videoId ? (
+          <div className="mt-4 aspect-video w-full max-w-xl overflow-hidden rounded bg-black">
+            <iframe
+              className="h-full w-full"
+              src={`https://www.youtube-nocookie.com/embed/${release.videoId}?rel=0`}
+              title={`${release.title} video`}
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        ) : (
+          <audio controls src={release.audio} className="mt-4 w-full max-w-[300px]" />
+        )}
+      </div>
+    );
+  };
+
   return (
     <div className="aboutus px-4 lg:px-24 py-10 font-lato">
       <div className="max-w-5xl mx-auto w-full space-y-10">
@@ -56,16 +114,10 @@ export default function ReleaseDetails() {
                   <img
                     src={r.cover}
                     alt={r.title}
-                    className="w-full h-[200px] md:h-[240px] lg:h-[280px] object-cover rounded"
+                    className="w-full h-[200px] md:h-[300px] lg:h-[350px] object-cover rounded"
                   />
                 ) : (
-                  <div className="flex flex-col justify-center px-2">
-                    <h3 className="text-white text-xl md:text-2xl font-bold">
-                      {r.artist}
-                    </h3>
-                    <p className="text-white/80 mt-2">{r.title}</p>
-                    <audio controls src={r.audio} className="mt-3 w-[300px]" />
-                  </div>
+                  releaseInfo(r)
                 )}
 
                 {!isImageLeft ? (
@@ -75,13 +127,7 @@ export default function ReleaseDetails() {
                     className="w-full h-[200px] md:h-[240px] lg:h-[280px] object-cover rounded"
                   />
                 ) : (
-                  <div className="flex flex-col justify-center px-2">
-                    <h3 className="text-white text-xl md:text-2xl font-bold">
-                      {r.artist}
-                    </h3>
-                    <p className="text-white/80 mt-2">{r.title}</p>
-                    <audio controls src={r.audio} className="mt-3 w-[300px]" />
-                  </div>
+                  releaseInfo(r)
                 )}
               </div>
 

@@ -44,7 +44,7 @@ export const newsPosts = [
   {
     id: 'culture-in-every-chord',
     title: 'Culture in Every Chord and How Our Artists Stay Rooted While Reaching the World',
-    image: '/src/assets/Images/artis.png',
+    image: '/src/assets/Images/sammy.jpeg',
     date: 'August 1, 2025',
     time: '12:10PM',
     author: 'Media Team',

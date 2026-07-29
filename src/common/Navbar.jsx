@@ -18,7 +18,10 @@ export default function Navbar() {
 
   return (
     <div className="w-full z-50 navbar h-[88px] font-lato flex justify-between items-center px-6 lg:px-10 rounded-full  top-0 left-0 right-0">
+    <NavLink to='/'>
+
       <img src={logo} alt="logo" className="object-cover h-[63px] w-[176px]" />
+    </NavLink>
 
       {/* Desktop Links */}
       <div className="hidden font-lato lg:flex gap-5 text-sm">
