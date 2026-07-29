@@ -95,7 +95,7 @@ export default function Navbar() {
           )}
           <NavLink
             to="/contact-us"
-            className="px-8 uppercase justify-center items-center flex py-6 mt-4 rounded-full text-white font-bold text-sm bg-[#4B0082]"
+            className="px-7 uppercase justify-center items-center flex py-6 mt-4 rounded-full text-white font-bold text-sm bg-[#4B0082]"
           >
             Start Your Experience
           </NavLink>
