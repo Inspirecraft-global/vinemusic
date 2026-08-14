@@ -11,8 +11,9 @@ const releases = [
     artist: 'Sammy Greyson ',
     title: 'Beautiful Day',
     cover: Cover3,
-    audio: '/audio/Sammy.mp3',
+    audio: '/audio/beautiful.mp3',
     videoId: '0oJO_MIE2q8',
+    ditto: 'https://ditto.fm/beautiful_day_0c6560df',
   },
   {
     id: 'love-and-light-2',
@@ -21,6 +22,7 @@ const releases = [
     cover: Cover2,
     audio: '/audio/Madt.mp3',
     videoId: 'YpGE-yxvoI8',
+    ditto: 'https://ditto.fm/madt',
   },
   {
     id: 'love-and-light-3',
@@ -28,6 +30,7 @@ const releases = [
     title: 'Madt-Live.mp3',
     cover: Cover2,
     audio: '/audio/Madt-LIVE.mp3',
+    ditto: 'https://ditto.fm/madt',
   },
   {
     id: 'love-and-light-4',
@@ -36,6 +39,7 @@ const releases = [
     cover: Cover4,
     audio: '/audio/Praise_Sammy.mp3',
     videoId: '50MVMz04UBU',
+    ditto: 'https://ditto.fm/unusual-praise',
 
 
   },
@@ -45,6 +49,15 @@ const releases = [
     title: 'Unsual Praise_Sammy Droos',
     cover: Cover4,
     audio: '/audio/AUD-20250619-WA0007.mp3',
+    ditto: 'https://ditto.fm/unusual-praise',
+  },
+    {
+    id: 'love-and-light-5',
+    artist: 'Sammy Greyson',
+    title: 'Unsual Praise_Sammy Droos',
+    cover: Cover4,
+    audio: '/audio/AUD-20250619-WA0007.mp3',
+    ditto: 'https://ditto.fm/unusual-praise',
   },
 ];
 
@@ -97,6 +110,17 @@ export default function ReleaseDetails() {
           </div>
         ) : (
           <audio controls src={release.audio} className="mt-4 w-full max-w-[300px]" />
+        )}
+
+        {release.ditto && (
+          <a
+            href={release.ditto}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-bold text-[#4B0082] transition hover:bg-white/90"
+          >
+            Listen on Ditto
+          </a>
         )}
       </div>
     );

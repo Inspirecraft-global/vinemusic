@@ -28,10 +28,10 @@ export default function AboutCEO() {
             traditional medicine, offering hope, coneection, and renewal to
             those who need it most.
             <br />
-            Whether the mentoring the next generation of healthcare
+            "Whether the mentoring the next generation of healthcare
             professionals or individuals and communities, he
             approaches each interaction with genuine compassion and unwavering
-            dedication to service.
+            dedication to service."
           </p>
         </div>
       </div>
