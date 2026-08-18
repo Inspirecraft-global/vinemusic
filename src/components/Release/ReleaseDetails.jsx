@@ -3,7 +3,9 @@ import Cover3 from '../../assets/Images/beau.jpeg';
 import Cover1 from '../../assets/Images/volin.jpg';
 import Cover2 from '../../assets/Images/madt.jpeg';
 import Cover4 from '../../assets/Images/praise.jpeg';
+import Cover7 from '../../assets/Images/ana.png';
 import Cover5 from '../../assets/Images/vint.jpg';
+import Cover6 from '../../assets/Images/grac.png';
 
 const releases = [
   {
@@ -15,7 +17,7 @@ const releases = [
     videoId: '0oJO_MIE2q8',
     ditto: 'https://ditto.fm/beautiful_day_0c6560df',
   },
-  {
+/*   {
     id: 'love-and-light-2',
     artist: 'Sammy Greyson',
     title: 'Madt-DEMO.mp3',
@@ -23,13 +25,14 @@ const releases = [
     audio: '/audio/Madt.mp3',
     videoId: 'YpGE-yxvoI8',
     ditto: 'https://ditto.fm/madt',
-  },
+  }, */
   {
     id: 'love-and-light-3',
     artist: 'Sammy Greyson',
     title: 'Madt-Live.mp3',
     cover: Cover2,
     audio: '/audio/Madt-LIVE.mp3',
+    videoId:'HYxSwCmZoJE',
     ditto: 'https://ditto.fm/madt',
   },
   {
@@ -46,18 +49,20 @@ const releases = [
   {
     id: 'love-and-light-5',
     artist: 'Sammy Greyson',
-    title: 'Unsual Praise_Sammy Droos',
-    cover: Cover4,
+    title: 'Annabel',
+    cover: Cover7,
     audio: '/audio/AUD-20250619-WA0007.mp3',
-    ditto: 'https://ditto.fm/unusual-praise',
+    videoId: 'X6QgFqTOkS0',
+    ditto: 'https://ditto.fm/annabel',
   },
     {
     id: 'love-and-light-5',
     artist: 'Sammy Greyson',
-    title: 'Unsual Praise_Sammy Droos',
-    cover: Cover4,
+    title: 'GFTR (Grace For The Race)',
+    cover: Cover6,
     audio: '/audio/AUD-20250619-WA0007.mp3',
-    ditto: 'https://ditto.fm/unusual-praise',
+    videoId:'hcsF8f02ta8',
+    ditto: 'https://ditto.fm/gftr',
   },
 ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import vector from '../../assets/Images/vtb.png';
-import CEO from '../../assets/Images/sammy.jpeg';
+import CEO from '../../assets/Images/ceo.jpg';
 
 export default function AboutCEO() {
   return (
@@ -28,10 +28,10 @@ export default function AboutCEO() {
             traditional medicine, offering hope, coneection, and renewal to
             those who need it most.
             <br />
-            "Whether the mentoring the next generation of healthcare
+            Whether in mentoring the next generation of healthcare
             professionals or individuals and communities, he
             approaches each interaction with genuine compassion and unwavering
-            dedication to service."
+            dedication to service.
           </p>
         </div>
       </div>
