@@ -25,7 +25,7 @@ export default function AboutCEO() {
             expression to create meaningful change in his community.
             <br />
             As both healer and artist, Dr. Oyefeso belives that music trancends
-            traditional medicine, offering hope, coneection, and renewal to
+            traditional medicine, offering hope, connection, and renewal to
             those who need it most.
             <br />
             Whether in mentoring the next generation of healthcare

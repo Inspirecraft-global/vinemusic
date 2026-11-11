@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import Cover3 from '../../assets/Images/beau.jpeg';
+import AnnabelCover from '../../assets/Images/ana.png';
 import { NavLink } from 'react-router';
 
 const releases = [
   {
-    id: 'love-and-light-1',
-    artist: 'Sammy Greyson ',
-    title: 'Beautiful Day',
-    cover: Cover3,
-    audio: '/audio/Sammy.mp3',
-    videoId: '0oJO_MIE2q8',
+    id: 'love-and-light-5',
+    artist: 'Sammy Greyson',
+    title: 'Annabel',
+    cover: AnnabelCover,
+    audio: '/audio/Annabel.mp3',
+    videoId: 'X6QgFqTOkS0',
+    ditto: 'https://ditto.fm/annabel',
   },
 ];
 

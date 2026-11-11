@@ -51,7 +51,7 @@ const releases = [
     artist: 'Sammy Greyson',
     title: 'Annabel',
     cover: Cover7,
-    audio: '/audio/AUD-20250619-WA0007.mp3',
+    audio: '/audio/Annabel.mp3',
     videoId: 'X6QgFqTOkS0',
     ditto: 'https://ditto.fm/annabel',
   },
@@ -60,7 +60,7 @@ const releases = [
     artist: 'Sammy Greyson',
     title: 'GFTR (Grace For The Race)',
     cover: Cover6,
-    audio: '/audio/AUD-20250619-WA0007.mp3',
+    audio: '/audio/GFTR.mp3',
     videoId:'hcsF8f02ta8',
     ditto: 'https://ditto.fm/gftr',
   },
@@ -122,9 +122,9 @@ export default function ReleaseDetails() {
             href={release.ditto}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-bold text-[#4B0082] transition hover:bg-white/90"
+            className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2 text-xs font-bold text-[#4B0082] transition hover:bg-white/90"
           >
-            Listen on Ditto
+            Available on all platforms now
           </a>
         )}
       </div>

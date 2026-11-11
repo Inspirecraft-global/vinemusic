@@ -20,7 +20,7 @@ export default function AboutMission() {
             Our Vision{' '}
           </h3>
           <p className="text-lg md:text-xl mt-3 ">
-            To be one of the UK’s most inspiration-rooted record labels,
+            To be one of the world's leading  inspiration-rooted record labels,
             transforming lives through music that heals, inspires, and redefines
             modern love and life.
           </p>
