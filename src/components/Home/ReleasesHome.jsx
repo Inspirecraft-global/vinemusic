@@ -9,7 +9,7 @@ const releases = [
     title: 'Annabel',
     cover: AnnabelCover,
     audio: '/audio/Annabel.mp3',
-    videoId: 'X6QgFqTOkS0',
+    videoId: 'G24YRUYI5bg',
     ditto: 'https://ditto.fm/annabel',
   },
 ];

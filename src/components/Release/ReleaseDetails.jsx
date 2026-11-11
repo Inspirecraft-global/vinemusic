@@ -32,7 +32,7 @@ const releases = [
     title: 'Madt-Live.mp3',
     cover: Cover2,
     audio: '/audio/Madt-LIVE.mp3',
-    videoId:'HYxSwCmZoJE',
+    videoId: 'YpGE-yxvoI8',
     ditto: 'https://ditto.fm/madt',
   },
   {
@@ -52,16 +52,16 @@ const releases = [
     title: 'Annabel',
     cover: Cover7,
     audio: '/audio/Annabel.mp3',
-    videoId: 'X6QgFqTOkS0',
+    videoId: 'G24YRUYI5bg',
     ditto: 'https://ditto.fm/annabel',
   },
-    {
-    id: 'love-and-light-5',
+  {
+    id: 'love-and-light-6',
     artist: 'Sammy Greyson',
     title: 'GFTR (Grace For The Race)',
     cover: Cover6,
     audio: '/audio/GFTR.mp3',
-    videoId:'hcsF8f02ta8',
+    videoId: 'PWBvEHv3yqY',
     ditto: 'https://ditto.fm/gftr',
   },
 ];
