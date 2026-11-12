@@ -29,7 +29,7 @@ const releases = [
   {
     id: 'love-and-light-3',
     artist: 'Sammy Greyson',
-    title: 'Madt-Live.mp3',
+    title: 'Madt',
     cover: Cover2,
     audio: '/audio/Madt-LIVE.mp3',
     videoId: 'YpGE-yxvoI8',
@@ -38,7 +38,7 @@ const releases = [
   {
     id: 'love-and-light-4',
     artist: 'Sammy Greyson',
-    title: 'Unsual Praise_Sammy Droos',
+    title: 'Unusual Praise',
     cover: Cover4,
     audio: '/audio/Praise_Sammy.mp3',
     videoId: '50MVMz04UBU',
